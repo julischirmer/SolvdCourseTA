@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" verbose="1" parallel="tests" thread-count="12">
+
+
+    <test name="Settings">
+
+        <classes>
+
+            <class name="com.solvd.demo.MyTestClass">
+
+                <methods>
+                    <include name="testNew"/>
+                    <include name="myNewTest"
+
+                </methods>
+
+            </class>
+
+        </classes>
+
+
+    </test>
+
+    <test name="NoPackage">
+
+            <classes>
+
+                <class name="com.solvd.demo.MyTestClass">
+
+                    <methods>
+                        <include name="testNew"/>
+                        <include name="myNewTest"
+
+                    </methods>
+
+                </class>
+
+            </classes>
+    </test>
+
+
+</suite>
