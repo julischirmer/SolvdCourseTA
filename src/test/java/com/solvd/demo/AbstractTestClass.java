@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public abstract class AbstractTestClass {
     Logger logger = Logger.getLogger(AbstractTestClass.class.getName());
     @BeforeMethod
-    public void beforeMethod() {
+    public void beforeMethodParent() {
         logger.info("This is parent method before test method");
     }
 }

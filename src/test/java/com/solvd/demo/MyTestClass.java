@@ -8,15 +8,15 @@ import org.testng.annotations.*;
 public class MyTestClass extends AbstractTestClass {
     Logger logger = LogManager.getLogger(MyTestClass.class);
 
-    @BeforeSuite
-    public void beforeSuite() {
-        logger.info("Before suite");
-    }
-
-    @BeforeGroups
-    public void beforeGroups() {
-        logger.info("Before groups");
-    }
+//    @BeforeSuite
+//    public void beforeSuite() {
+//        logger.info("Before suite");
+//    }
+//
+//    @BeforeGroups
+//    public void beforeGroups() {
+//        logger.info("Before groups");
+//    }
 
     @BeforeTest
     public void beforeTest() {
@@ -35,13 +35,13 @@ public class MyTestClass extends AbstractTestClass {
 
 
     @Test
-    public void testNew() {
-        logger.info("This is test method");
+    public void simpleTest1() {
+        logger.info("This is test");
     }
 
     @Test
-    public void myNewTest() {
-        logger.info("This is test2 method");
+    public void simpleTest2() {
+        logger.info("This is test2");
     }
 
     @AfterMethod
@@ -58,14 +58,15 @@ public class MyTestClass extends AbstractTestClass {
     public void afterTest() {
         logger.info("After test");
     }
-    @AfterGroups
-    public void afterGroups() {
-        logger.info("After groups");
-    }
 
-    @AfterSuite
-    public void afterSuite() {
-        logger.info("After suite");
-    }
+//    @AfterGroups
+//    public void afterGroups() {
+//        logger.info("After groups");
+//    }
+//
+//    @AfterSuite
+//    public void afterSuite() {
+//        logger.info("After suite");
+//    }
 
 }
